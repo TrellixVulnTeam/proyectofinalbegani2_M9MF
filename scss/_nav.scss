@@ -1,0 +1,26 @@
+.header{
+    .navbar{
+            .navbar-nav{
+                list-style: none;
+                text-decoration: none;
+                display: flex;
+                justify-content: right;
+                color: #93B5D1;
+                font-size: 23px;
+            }
+
+                .nav-link{
+                    color: #93B5D1;
+                    padding: 0.7rem;
+                    text-decoration: none;
+                }
+
+                    .nav-link:hover{
+                        text-decoration: overline;
+                        color: #4D81BA;
+                        font-weight: bold;
+                    }
+                }
+            }
+
+

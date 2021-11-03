@@ -1,0 +1,32 @@
+.igt{
+  margin-bottom: 100px;
+}
+
+.categoriasig{
+  text-align: right;
+  height: 500px;
+  display: grid;
+  grid-template-areas: 
+  "australia eeuu noruega";
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto;
+  justify-content: space-around;
+  align-content: center;
+}
+
+.australia{
+  grid-area: australia;
+  border-radius: 20px;
+}
+
+.eeuu{
+  grid-area: eeuu;
+}
+
+.noruega{
+  grid-area: noruega;
+}
+
+.informacion__general{
+  padding: 40px;
+}

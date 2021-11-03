@@ -1,0 +1,74 @@
+.section__bienvenidos{
+    text-align: center;
+    background-color: #fde7f9;
+    background-image: linear-gradient(315deg, #fde7f9 0%, #aacaef 74%);
+    padding: 75px;
+    border: solid px #4D81BA;
+
+    height: 570px;
+}
+
+.categorias{
+    text-align: right;
+    height: 500px;
+    background-color: #d0e6fc;
+    margin-bottom: 100px;
+    display: grid;
+    grid-template-areas: 
+    "australia eeuu noruega titulo"
+    "australia eeuu noruega texto"
+    "australia eeuu noruega boton";
+    grid-template-columns: auto auto auto 400px;
+    grid-template-rows: 100px 150px 250p;
+    justify-content: space-around;
+    align-content: center;
+
+    .tt{
+        color: #4D81BA;
+        font-weight: bold;
+        font-size: xx-large;
+        grid-area: titulo;
+        align-content: start;
+        padding: 25px;
+        text-align: left;
+    }
+    
+    .tc{
+        font-size: 20px;
+        width: 350px;
+        padding: 15px;
+        grid-area: texto;
+        justify-self: center;
+    }
+    
+    .boton pai{
+        grid-area: boton;
+        align-self: center;
+    
+    }
+}
+
+.australia{
+    grid-area: australia;
+}
+
+.eeuu{
+    grid-area: eeuu;
+}
+
+.noruega{
+    grid-area: noruega;
+}
+
+
+
+.informacion__general{
+    padding: 40px;
+}
+
+.card-img-overlay{
+    text-align: end;
+    justify-content: end;
+    justify-self: end;
+}
+

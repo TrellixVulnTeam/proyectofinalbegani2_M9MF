@@ -1,0 +1,21 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	border: none;
+	outline: none;
+}
+
+
+body{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media(max-width: 768px){
+	body{
+	 max-width: auto;
+	 flex-direction: column;
+	}
+}

@@ -1,0 +1,93 @@
+.experiencia{
+    background-color: #aacaef;
+    border: 5px;
+    margin: 90px;
+    padding: 90px;
+}
+
+.comunidad__uno{
+    padding-bottom:  50px;
+    margin: 0px;
+}
+
+.section__comunidad{
+    display: grid;
+    grid-template-areas: 
+    "titulo titulo titulo titulo"
+    "texto card1 card2 card3"
+    "boton card1 card2 card3";
+    grid-template-rows: 100px 150px 250px;
+    grid-template-columns: 400px auto auto auto;
+    background-color:none;
+    padding: 15px;
+    margin-top: 25px;
+    height: 500px;
+    align-content: center;
+    justify-content: space-around;
+
+
+        .tc{
+            font-size: 20px;
+            width: 350px;
+            padding: 15px;
+            grid-area: texto;
+            justify-self: center;
+        }
+        .tt{
+            color: #4D81BA;
+            font-weight: bold;
+            font-size: xx-large;
+            grid-area: titulo;
+            align-content: start;
+            padding: 25px;
+            text-align: left;
+        }
+
+            .co{
+                grid-area: boton;
+                align-self: start;
+
+            }
+
+
+    }
+.card1{
+    grid-area: card1;
+    background-color:  rgb(204, 230, 238);
+    box-shadow: 8px 8px 4px 3px rgba(0, 0, 0, 0.15);
+}
+
+.card2{
+    grid-area: card2;
+    background-color:  rgb(204, 230, 238);
+    box-shadow: 8px 8px 4px 3px rgba(0, 0, 0, 0.15);
+}
+
+.card3{
+    grid-area: card3;
+    background-color: rgb(204, 230, 238);
+    box-shadow: 8px 8px 4px 3px rgba(0, 0, 0, 0.15);
+}
+.card-body{
+    display: grid;
+    grid-template-areas: 
+    "foto h5"
+    "texto texto";
+    grid-template-rows: 60px 290px;
+    grid-template-columns: 60px 190px;
+        .fotoperfil{
+            grid-area: foto;
+        }
+            .card-title{
+                grid-area: h5;
+            }
+                .pc{
+                    grid-area: texto;
+                }
+}
+
+ .card-tittle{
+    color: white;
+    text-align: end;
+ }
+    
