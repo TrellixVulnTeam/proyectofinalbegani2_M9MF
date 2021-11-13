@@ -54,7 +54,8 @@
 .card1{
     grid-area: card1;
     background-color:  rgb(204, 230, 238);
-    box-shadow: 8px 8px 4px 3px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
 }
 
 .card2{
@@ -90,4 +91,47 @@
     color: white;
     text-align: end;
  }
-    
+
+  
+ .rowss {
+    margin: 8px -16px;
+  }
+  
+  /* Add padding BETWEEN each column */
+  .rowss,
+  .rowss > .columna {
+    padding: 8px;
+  }
+  
+  /* Create four equal columns that floats next to each other */
+  .columna {
+    float: left;
+    width: 25%;
+  }
+  
+  /* Clear floats after rows */ 
+  .rowss:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Content */
+  .contentC {
+    background-color: white;
+    padding: 10px;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 900px) {
+    .columnas {
+      width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .columnas {
+      width: 100%;
+    }
+  }
