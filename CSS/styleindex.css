@@ -98,6 +98,10 @@ h5 {
   background: #aacaef;
   justify-self: center; }
 
+.boton2 {
+  color: #4D81BA;
+  text-decoration: none; }
+
 .footer ul {
   position: relative;
   left: 50%;
@@ -156,12 +160,12 @@ h5 {
 
 .categoriasig {
   text-align: right;
-  height: 500px;
+  height: auto;
   display: grid;
-  grid-template-areas: "australia eeuu noruega";
+  grid-template-areas: "brasil suiza noruega" "australia eeuu reino";
   grid-template-columns: auto auto auto;
-  grid-template-rows: auto;
-  justify-content: space-around;
+  grid-template-rows: auto auto;
+  justify-content: space-evenly;
   align-content: center; }
 
 .australia {
@@ -174,14 +178,47 @@ h5 {
 .noruega {
   grid-area: noruega; }
 
+.brasil {
+  grid-area: brasil;
+  margin-bottom: 20px; }
+
+.suiza {
+  grid-area: suiza; }
+
+.reino {
+  grid-area: reino; }
+
 .informacion__general {
   padding: 40px; }
 
-.experiencia {
-  background-color: #aacaef;
-  border: 5px;
-  margin: 90px;
-  padding: 90px; }
+.h2ig {
+  margin-bottom: 30px; }
+
+@media screen and (max-width: 768px) {
+  categoriasig {
+    text-align: right;
+    height: auto;
+    display: grid;
+    grid-template-areas: "brasil suiza noruega" "australia eeuu reino";
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    align-content: center;
+    row-gap: px; }
+  .australia {
+    grid-area: australia;
+    border-radius: 20px; }
+  .eeuu {
+    grid-area: eeuu; }
+  .noruega {
+    grid-area: noruega; }
+  .brasil {
+    grid-area: brasil; }
+  .suiza {
+    grid-area: suiza; }
+  .reino {
+    grid-area: reino; }
+  .informacion__general {
+    padding: 40px; } }
 
 .comunidad__uno {
   padding-bottom: 50px;
@@ -218,18 +255,24 @@ h5 {
 
 .card1 {
   grid-area: card1;
+  width: 270px;
+  height: 360px;
   background-color: #cce6ee;
-  box-shadow: 8px 8px 4px 3px rgba(0, 0, 0, 0.15); }
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); }
 
 .card2 {
   grid-area: card2;
+  width: 270px;
+  height: 360px;
   background-color: #cce6ee;
-  box-shadow: 8px 8px 4px 3px rgba(0, 0, 0, 0.15); }
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); }
 
 .card3 {
   grid-area: card3;
+  width: 270px;
+  height: 360px;
   background-color: #cce6ee;
-  box-shadow: 8px 8px 4px 3px rgba(0, 0, 0, 0.15); }
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); }
 
 .card-body {
   display: grid;
@@ -246,6 +289,126 @@ h5 {
 .card-tittle {
   color: white;
   text-align: end; }
+
+@media screen and (max-width: 768px) {
+  .section__comunidad {
+    display: grid;
+    grid-template-areas: "titulo titulo titulo" "texto texto texto" "boton boton boton" "card1 card2 card3";
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: auto auto auto;
+    padding: 15px;
+    margin-top: 150px;
+    margin-bottom: 300px;
+    align-content: center;
+    justify-content: center;
+    row-gap: 15px;
+    column-gap: 15px; }
+    .section__comunidad .tc {
+      font-size: 20px;
+      width: 350px;
+      grid-area: texto;
+      justify-self: center; }
+    .section__comunidad .tt {
+      color: #4D81BA;
+      font-weight: bold;
+      font-size: xx-large;
+      grid-area: titulo;
+      align-content: start;
+      text-align: center; }
+    .section__comunidad .boton {
+      grid-area: boton;
+      align-self: center;
+      justify-self: center; }
+  .card1 {
+    grid-area: card1;
+    width: 210px;
+    height: 450px;
+    background-color: #cce6ee; }
+  .card2 {
+    grid-area: card2;
+    width: 210px;
+    height: 450px;
+    background-color: #cce6ee; }
+  .card3 {
+    grid-area: card3;
+    width: 210px;
+    height: 450px;
+    background-color: #cce6ee; }
+  .card-body {
+    display: grid;
+    grid-template-areas: "foto h5" "texto texto";
+    grid-template-rows: 45px 290px;
+    grid-template-columns: auto auto;
+    row-gap: 7px; }
+    .card-body .fotoperfil {
+      grid-area: foto;
+      width: 40px; }
+    .card-body .card-title {
+      grid-area: h5;
+      font-size: 15px; }
+    .card-body .pc {
+      grid-area: texto;
+      width: 190px; } }
+
+@media screen and (max-width: 576px) {
+  .section__comunidad {
+    display: grid;
+    grid-template-areas: "titulo titulo titulo" "texto texto texto" "boton boton boton" "card1 card1 card1" "card2 card2 card2" "card3 card3 card3";
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-columns: auto auto auto;
+    padding: 15px;
+    margin-top: 300px;
+    margin-bottom: 300px;
+    align-content: center;
+    justify-content: center;
+    row-gap: 15px;
+    column-gap: 15px; }
+    .section__comunidad .tc {
+      font-size: 20px;
+      width: 350px;
+      grid-area: texto;
+      justify-self: center; }
+    .section__comunidad .tt {
+      color: #4D81BA;
+      font-weight: bold;
+      font-size: xx-large;
+      grid-area: titulo;
+      align-content: start;
+      text-align: center; }
+    .section__comunidad .boton {
+      grid-area: boton;
+      align-self: center;
+      justify-self: center; }
+  .card1 {
+    grid-area: card1;
+    width: 500px;
+    height: 230px;
+    background-color: #cce6ee; }
+  .card2 {
+    grid-area: card2;
+    width: 500px;
+    height: 230px;
+    background-color: #cce6ee; }
+  .card3 {
+    grid-area: card3;
+    width: 500px;
+    height: 230px;
+    background-color: #cce6ee; }
+  .card-body {
+    display: grid;
+    grid-template-areas: "foto h5" "texto texto";
+    grid-template-rows: auto auto;
+    grid-template-columns: 60px auto;
+    row-gap: 7px; }
+    .card-body .fotoperfil {
+      grid-area: foto;
+      width: 60px; }
+    .card-body .card-title {
+      grid-area: h5;
+      font-size: 20px; }
+    .card-body .pc {
+      grid-area: texto;
+      width: 480px; } }
 
 .details {
   font-size: large;
@@ -425,122 +588,119 @@ form .button input:hover {
 ::selection {
   color: #fde7f9;
   background-image: linear-gradient(315deg, #fde7f9 0%, #aacaef 74%); }
-
-.container {
-  background: #fff;
-  max-width: 350px;
-  width: 100%;
-  padding: 25px 30px;
-  border-radius: 5px;
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15); }
-
-.container form .title {
-  font-size: 30px;
-  font-weight: 600;
-  margin: 20px 0 10px 0;
-  position: relative; }
-
-.container form .title:before {
-  content: '';
-  position: absolute;
-  height: 4px;
-  width: 33px;
-  left: 0px;
-  bottom: 3px;
-  border-radius: 5px;
-  background: linear-gradient(315deg, #fde7f9 0%, #aacaef 74%); }
-
-.container form .input-box {
-  width: 100%;
-  height: 45px;
-  margin-top: 25px;
-  position: relative; }
-
-.container form .input-box input {
-  width: 100%;
-  height: 100%;
-  outline: none;
-  font-size: 16px;
-  border: none; }
-
-.container form .underline::before {
-  content: '';
-  position: absolute;
-  height: 2px;
-  width: 100%;
-  background: #ccc;
-  left: 0;
-  bottom: 0; }
-
-.container form .underline::after {
-  content: '';
-  position: absolute;
-  height: 2px;
-  width: 100%;
-  background: linear-gradient(315deg, #fde7f9 0%, #aacaef 74%);
-  left: 0;
-  bottom: 0;
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: all 0.3s ease; }
-
-.container form .input-box input:focus ~ .underline::after,
-.container form .input-box input:valid ~ .underline::after {
-  transform: scaleX(1);
-  transform-origin: left; }
-
-.container form .button {
-  margin: 40px 0 20px 0; }
-
-.container .input-box input[type="submit"] {
-  background: linear-gradient(315deg, #fde7f9 0%, #aacaef 74%);
-  font-size: 17px;
-  color: #fff;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: all 0.3s ease; }
-
-.container .input-box input[type="submit"]:hover {
-  letter-spacing: 1px;
-  background: linear-gradient(315deg, #fde7f9 0%, #aacaef 74%); }
-
-.container .option {
-  font-size: 14px;
-  text-align: center; }
-
-.container .facebook a,
-.container .twitter a {
-  display: block;
-  height: 45px;
-  width: 100%;
-  font-size: 15px;
-  text-decoration: none;
-  padding-left: 20px;
-  line-height: 45px;
-  color: #fff;
-  border-radius: 5px;
-  transition: all 0.3s ease; }
-
-.container .facebook i,
-.container .twitter i {
-  padding-right: 12px;
-  font-size: 20px; }
-
-.container .twitter a {
-  background: linear-gradient(to right, #DB4437 0%, #DB4437 100%);
-  margin: 20px 0 15px 0; }
-
-.container .twitter a:hover {
-  background: linear-gradient(to left, #DB4437 0%, #DB4437 100%);
-  margin: 20px 0 15px 0; }
-
-.container .facebook a {
-  background: linear-gradient(to right, #3b5998 0%, #476bb8 100%);
-  margin: 20px 0 50px 0; }
-
-.container .facebook a:hover {
-  background: linear-gradient(to left, #3b5998 0%, #476bb8 100%);
-  margin: 20px 0 50px 0; }
+  ::selection body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background: linear-gradient(315deg, #fde7f9 0%, #aacaef 74%); }
+  ::selection .container {
+    max-width: 700px;
+    width: 100%;
+    background-color: #fff;
+    padding: 25px 30px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15); }
+  ::selection .container .title {
+    font-size: 25px;
+    font-weight: 500;
+    position: relative; }
+  ::selection .container .title::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    border-radius: 5px;
+    background: linear-gradient(315deg, #fde7f9 0%, #aacaef 74%); }
+  ::selection .content form .user-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0; }
+  ::selection form .user-details .input-box {
+    margin-bottom: 15px;
+    width: calc(100% / 2 - 20px); }
+  ::selection form .input-box span.details {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px; }
+  ::selection .user-details .input-box input {
+    height: 45px;
+    width: 100%;
+    outline: none;
+    font-size: 16px;
+    border-radius: 5px;
+    padding-left: 15px;
+    border: 1px solid #ccc;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease; }
+  ::selection .user-details .input-box input:focus,
+  ::selection .user-details .input-box input:valid {
+    border-color: #9b59b6; }
+  ::selection form .gender-details .gender-title {
+    font-size: 20px;
+    font-weight: 500; }
+  ::selection form .category {
+    display: flex;
+    width: 80%;
+    margin: 14px 0;
+    justify-content: space-between; }
+  ::selection form .category label {
+    display: flex;
+    align-items: center;
+    cursor: pointer; }
+  ::selection form .category label .dot {
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    margin-right: 10px;
+    background: #d9d9d9;
+    border: 5px solid transparent;
+    transition: all 0.3s ease; }
+  ::selection #dot-1:checked ~ .category label .one,
+  ::selection #dot-2:checked ~ .category label .two,
+  ::selection #dot-3:checked ~ .category label .three {
+    background: #9b59b6;
+    border-color: #d9d9d9; }
+  ::selection form input[type="radio"] {
+    display: none; }
+  ::selection form .button {
+    height: 45px;
+    margin: 35px 0; }
+  ::selection form .button input {
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6); }
+  ::selection form .button input:hover {
+    /* transform: scale(0.99); */
+    background: linear-gradient(-135deg, #71b7e6, #9b59b6); }
+  @media (max-width: 584px) {
+    ::selection .container {
+      max-width: 100%; }
+    ::selection form .user-details .input-box {
+      margin-bottom: 15px;
+      width: 100%; }
+    ::selection form .category {
+      width: 100%; }
+    ::selection .content form .user-details {
+      max-height: 300px;
+      overflow-y: scroll; }
+    ::selection .user-details::-webkit-scrollbar {
+      width: 5px; } }
+  @media (max-width: 459px) {
+    ::selection .container .content .category {
+      flex-direction: column; } }
 
 .section__bienvenidos {
   text-align: center;
@@ -595,3 +755,96 @@ form .button input:hover {
   text-align: end;
   justify-content: end;
   justify-self: end; }
+
+@media screen and (max-width: 768px) {
+  .categorias {
+    text-align: center;
+    background-color: #d0e6fc;
+    margin-bottom: 100px;
+    display: grid;
+    grid-template-areas: "titulo titulo titulo" "texto texto texto" "boton boton boton" "australia eeuu noruega";
+    grid-template-columns: 190px 190px 190px;
+    grid-template-rows: auto auto auto auto;
+    align-content: center;
+    justify-content: space-evenly;
+    row-gap: 5px; }
+    .categorias .tt {
+      color: #4D81BA;
+      font-weight: bold;
+      font-size: xx-large;
+      grid-area: titulo;
+      width: 700px;
+      text-align: center;
+      padding: 25px; }
+    .categorias .tc {
+      font-size: 20px;
+      width: 350px;
+      padding: 15px;
+      grid-area: texto;
+      width: 700px;
+      text-align: center; }
+    .categorias .boton {
+      grid-area: boton;
+      align-self: center;
+      justify-self: center; }
+  .australia {
+    grid-area: australia; }
+  .eeuu {
+    grid-area: eeuu; }
+  .noruega {
+    grid-area: noruega; }
+  .informacion__general {
+    padding: 40px; }
+  .card-img-overlay {
+    text-align: end;
+    justify-content: end;
+    justify-self: end; } }
+
+@media screen and (max-width: 576px) {
+  .categorias {
+    text-align: center;
+    background-color: #d0e6fc;
+    margin-bottom: 100px;
+    display: grid;
+    grid-template-areas: "titulo titulo titulo" "texto texto texto" "boton boton boton" "australia eeuu noruega";
+    grid-template-columns: 150px 150px 150px;
+    grid-template-rows: auto auto auto auto;
+    align-content: center;
+    justify-content: space-evenly;
+    row-gap: 5px; }
+    .categorias .tt {
+      color: #4D81BA;
+      font-weight: bold;
+      font-size: xx-large;
+      grid-area: titulo;
+      width: 500px;
+      text-align: center;
+      padding: 25px; }
+    .categorias .tc {
+      font-size: 20px;
+      width: 350px;
+      padding: 15px;
+      grid-area: texto;
+      width: 500px;
+      text-align: center; }
+    .categorias .boton {
+      grid-area: boton;
+      align-self: center;
+      justify-self: center;
+      margin: auto; }
+  .australia {
+    grid-area: australia; }
+  .eeuu {
+    grid-area: eeuu; }
+  .noruega {
+    grid-area: noruega; }
+  .informacion__general {
+    padding: 40px; }
+  .card-img-overlay {
+    text-align: end;
+    justify-content: end;
+    justify-self: end; }
+  .card-texts {
+    font-size: 8px; }
+  .card-titles {
+    font-size: 13px; } }

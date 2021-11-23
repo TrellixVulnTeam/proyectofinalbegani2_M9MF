@@ -7,16 +7,19 @@
   height: auto;
   display: grid;
   grid-template-areas: 
-  "australia eeuu noruega";
+  "brasil suiza noruega"
+  "australia eeuu reino";
   grid-template-columns: auto auto auto;
-  grid-template-rows: auto;
-  justify-content: space-around;
+  grid-template-rows: auto auto;
+  justify-content: space-evenly;
   align-content: center;
+
 }
 
 .australia{
   grid-area: australia;
   border-radius: 20px;
+  
 }
 
 .eeuu{
@@ -26,7 +29,70 @@
 .noruega{
   grid-area: noruega;
 }
+.brasil{
+  grid-area: brasil;
+  margin-bottom: 20px;
+}
+
+.suiza{
+  grid-area: suiza;
+}
+
+.reino{
+  grid-area: reino;
+}
+
 
 .informacion__general{
   padding: 40px;
+}
+
+
+.h2ig{
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 768px){
+  categoriasig{
+    text-align: right;
+    height: auto;
+    display: grid;
+    grid-template-areas: 
+    "brasil suiza noruega"
+    "australia eeuu reino";
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    align-content: center;
+    row-gap: px;
+  
+  }
+  
+  .australia{
+    grid-area: australia;
+    border-radius: 20px;
+  }
+  
+  .eeuu{
+    grid-area: eeuu;
+  }
+  
+  .noruega{
+    grid-area: noruega;
+  }
+
+  .brasil{
+    grid-area: brasil;
+  }
+  
+  .suiza{
+    grid-area: suiza;
+  }
+
+  .reino{
+    grid-area: reino;
+  }
+
+  .informacion__general{
+    padding: 40px;
+  }
 }

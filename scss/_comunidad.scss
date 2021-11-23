@@ -1,10 +1,3 @@
-.experiencia{
-    background-color: #aacaef;
-    border: 5px;
-    margin: 90px;
-    padding: 90px;
-}
-
 .comunidad__uno{
     padding-bottom:  50px;
     margin: 0px;
@@ -53,21 +46,26 @@
     }
 .card1{
     grid-area: card1;
+    width: 270px;
+    height: 360px;
     background-color:  rgb(204, 230, 238);
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
 }
 
 .card2{
     grid-area: card2;
+    width: 270px;
+    height: 360px;
     background-color:  rgb(204, 230, 238);
-    box-shadow: 8px 8px 4px 3px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
 .card3{
     grid-area: card3;
+    width: 270px;
+    height: 360px;
     background-color: rgb(204, 230, 238);
-    box-shadow: 8px 8px 4px 3px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 .card-body{
     display: grid;
@@ -92,46 +90,178 @@
     text-align: end;
  }
 
-  
- .rowss {
-    margin: 8px -16px;
-  }
-  
-  /* Add padding BETWEEN each column */
-  .rowss,
-  .rowss > .columna {
-    padding: 8px;
-  }
-  
-  /* Create four equal columns that floats next to each other */
-  .columna {
-    float: left;
-    width: 25%;
-  }
-  
-  /* Clear floats after rows */ 
-  .rowss:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  /* Content */
-  .contentC {
-    background-color: white;
-    padding: 10px;
-  }
-  
-  /* Responsive layout - makes a two column-layout instead of four columns */
-  @media screen and (max-width: 900px) {
-    .columnas {
-      width: 50%;
+
+ @media screen and (max-width: 768px){
+  .section__comunidad{
+    display: grid;
+    grid-template-areas: 
+    "titulo titulo titulo"
+    "texto texto texto"
+    "boton boton boton"
+    "card1 card2 card3";
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: auto auto auto;
+    padding: 15px;
+    margin-top: 150px;
+    margin-bottom: 300px;
+    align-content: center;
+    justify-content: center;
+    row-gap: 15px;
+    column-gap: 15px;
+
+
+        .tc{
+            font-size: 20px;
+            width: 350px;
+            grid-area: texto;
+            justify-self: center;
+        }
+        .tt{
+            color: #4D81BA;
+            font-weight: bold;
+            font-size: xx-large;
+            grid-area: titulo;
+            align-content: start;
+            text-align: center;
+        }
+
+            .boton{
+                grid-area: boton;
+                align-self: center;
+                justify-self: center;
+
+            }
+
     }
+.card1{
+    grid-area: card1;
+    width: 210px;
+    height: 450px;
+    background-color:  rgb(204, 230, 238);
+}
+
+.card2{
+    grid-area: card2;
+    width: 210px;
+    height: 450px;
+    background-color:  rgb(204, 230, 238);  
+}
+
+.card3{
+    grid-area: card3;
+    width: 210px;
+    height: 450px;
+    background-color: rgb(204, 230, 238);   
+}
+.card-body{
+    display: grid;
+    grid-template-areas: 
+    "foto h5"
+    "texto texto";
+    grid-template-rows: 45px 290px;
+    grid-template-columns: auto auto;
+    row-gap: 7px;
+        .fotoperfil{
+            grid-area: foto;
+            width: 40px;
+        }
+            .card-title{
+                grid-area: h5;
+                font-size: 15px;
+            }
+                .pc{
+                    grid-area: texto;
+                    width: 190px;
+                }
+ }
+}
+  
+@media screen and (max-width: 576px){
+    .section__comunidad{
+      display: grid;
+      grid-template-areas: 
+      "titulo titulo titulo"
+      "texto texto texto"
+      "boton boton boton"
+      "card1 card1 card1"
+      "card2 card2 card2"
+      "card3 card3 card3";
+      grid-template-rows: auto auto auto auto auto auto;
+      grid-template-columns: auto auto auto;
+      padding: 15px;
+      margin-top: 300px;
+      margin-bottom: 300px;
+      align-content: center;
+      justify-content: center;
+      row-gap: 15px;
+      column-gap: 15px;
+  
+  
+          .tc{
+              font-size: 20px;
+              width: 350px;
+              grid-area: texto;
+              justify-self: center;
+          }
+          .tt{
+              color: #4D81BA;
+              font-weight: bold;
+              font-size: xx-large;
+              grid-area: titulo;
+              align-content: start;
+              text-align: center;
+          }
+  
+              .boton{
+                  grid-area: boton;
+                  align-self: center;
+                  justify-self: center;
+  
+              }
+  
+      }
+  .card1{
+      grid-area: card1;
+      width: 500px;
+      height: 230px;
+      background-color:  rgb(204, 230, 238);
   }
   
-  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 600px) {
-    .columnas {
-      width: 100%;
-    }
+  .card2{
+      grid-area: card2;
+      width: 500px;
+      height: 230px;
+      background-color:  rgb(204, 230, 238);  
   }
+  
+  .card3{
+      grid-area: card3;
+      width: 500px;
+      height: 230px;
+      background-color: rgb(204, 230, 238);   
+  }
+  .card-body{
+      display: grid;
+      grid-template-areas: 
+      "foto h5"
+      "texto texto";
+      grid-template-rows: auto auto;
+      grid-template-columns: 60px auto;
+      row-gap: 7px;
+          .fotoperfil{
+              grid-area: foto;
+              width: 60px;
+          }
+              .card-title{
+                  grid-area: h5;
+                  font-size: 20px;
+              }
+                  .pc{
+                      grid-area: texto;
+                      width: 480px;
+                  }
+  }
+   }
+
+ 
+

@@ -72,3 +72,149 @@
     justify-self: end;
 }
 
+@media screen and (max-width: 768px){
+    .categorias{
+        text-align: center;
+        background-color: #d0e6fc;
+        margin-bottom: 100px;
+        display: grid;
+        grid-template-areas: 
+        "titulo titulo titulo"
+        "texto texto texto"
+        "boton boton boton"
+        "australia eeuu noruega";
+        grid-template-columns: 190px 190px 190px;
+        grid-template-rows: auto auto auto auto;
+        align-content: center;
+        justify-content: space-evenly;
+        row-gap: 5px;
+
+    
+        .tt{
+            color: #4D81BA;
+            font-weight: bold;
+            font-size: xx-large;
+            grid-area: titulo;
+            width: 700px;
+            text-align: center;
+            padding: 25px;
+
+        }
+        
+        .tc{
+            font-size: 20px;
+            width: 350px;
+            padding: 15px;
+            grid-area: texto;
+            width: 700px;
+            text-align: center;
+        }
+        
+        .boton{
+            grid-area: boton;
+            align-self: center;
+           justify-self: center;
+        }
+    }
+    
+    .australia{
+        grid-area: australia;
+    }
+    
+    .eeuu{
+        grid-area: eeuu;
+    }
+    
+    .noruega{
+        grid-area: noruega;
+    }
+    
+    
+    
+    .informacion__general{
+        padding: 40px;
+    }
+    
+    .card-img-overlay{
+        text-align: end;
+        justify-content: end;
+        justify-self: end;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .categorias{
+        text-align: center;
+        background-color: #d0e6fc;
+        margin-bottom: 100px;
+        display: grid;
+        grid-template-areas: 
+        "titulo titulo titulo"
+        "texto texto texto"
+        "boton boton boton"
+        "australia eeuu noruega";
+        grid-template-columns: 150px 150px 150px;
+        grid-template-rows: auto auto auto auto;
+        align-content: center;
+        justify-content: space-evenly;
+        row-gap: 5px;
+
+    
+        .tt{
+            color: #4D81BA;
+            font-weight: bold;
+            font-size: xx-large;
+            grid-area: titulo;
+            width: 500px;
+            text-align: center;
+            padding: 25px;
+
+        }
+        
+        .tc{
+            font-size: 20px;
+            width: 350px;
+            padding: 15px;
+            grid-area: texto;
+            width: 500px;
+            text-align: center;
+        }
+        
+        .boton{
+            grid-area: boton;
+            align-self: center;
+           justify-self: center;
+           margin: auto;
+        }
+    }
+    
+    .australia{
+        grid-area: australia;
+    }
+    
+    .eeuu{
+        grid-area: eeuu;
+    }
+    
+    .noruega{
+        grid-area: noruega;
+    }
+    
+    
+    
+    .informacion__general{
+        padding: 40px;
+    }
+    
+    .card-img-overlay{
+        text-align: end;
+        justify-content: end;
+        justify-self: end;
+    }
+    .card-texts{
+        font-size: 8px ;
+    }
+    .card-titles{
+        font-size: 13px;
+    }
+}
